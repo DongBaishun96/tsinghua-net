@@ -1,4 +1,5 @@
-#Tsinghua-net
+# Tsinghua-net
+让你的远程主机不再断网！
 
 ## 安装步骤
 
