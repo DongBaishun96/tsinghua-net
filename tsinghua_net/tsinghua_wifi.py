@@ -2,7 +2,7 @@ import os
 import subprocess
 import chardet
 
-from tsinghua_net.tools.parameter import connection_ping_url, tsinghua_wlans
+from tsinghua_net.parameter import connection_ping_url, tsinghua_wlans
 
 
 def is_network_connection():

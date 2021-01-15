@@ -19,9 +19,9 @@ import hashlib
 import schedule
 import time
 
-from tsinghua_net.tools.data_format import format_time, format_usage, username_valid, wireless_valid
+from tsinghua_net.data_format import format_time, format_usage, username_valid, wireless_valid
 from tsinghua_net.tsinghua_wifi import is_network_connection, connect_wlan
-from tsinghua_net.tools.parameter import login_url, status_url, headers
+from tsinghua_net.parameter import login_url, status_url, headers
 from urllib3.exceptions import ProtocolError
 
 connection_type = 0  # 0代表有线连接，1代表无线连接
