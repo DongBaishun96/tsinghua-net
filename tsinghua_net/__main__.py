@@ -86,6 +86,7 @@ def status():
 
 # 定时任务（5分钟登录一次，防止断网）
 def schedule_job(username, password):
+    login()
     print("Keep network online...\n")
     schedule.every(5).minutes.do(login, username, password)
     while True:
