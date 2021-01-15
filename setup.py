@@ -8,9 +8,9 @@ setup(
     version="1.0.0",
     description="Tsinghua network tools",
     long_description=long_description,
-    license="MIT Licence",
+    license="Apache 2.0 Licence",
 
-    # url="http://test.com",
+    url="https://github.com/DongBaishun96/tsinghua-net",
     author="DongBaishun96",
     author_email="dbs18@mails.tsinghua.edu.cn",
 
