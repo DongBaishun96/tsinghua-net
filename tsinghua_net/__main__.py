@@ -98,13 +98,13 @@ def main():
     parser.add_argument('--password', '-p')
     parser.add_argument('--wireless', '-w',)
     args = parser.parse_args()
-    if wireless_valid(args.wireless):
-        connection_type = 1
     if args.action == 'login':
         if not username_valid(args.username):
             return
         if not username_valid(args.password):
             return
+        if wireless_valid(args.wireless):
+            connection_type = 1
         login(args.username, args.password)
     elif args.action == 'logout':
         logout()
@@ -115,6 +115,8 @@ def main():
             return
         if not username_valid(args.password):
             return
+        if wireless_valid(args.wireless):
+            connection_type = 1
         schedule_job(args.username, args.password)
 
 
