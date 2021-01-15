@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="tsinghua_net_dongbaishun",
+    name="tsinghua_net",
     version="1.0.0",
     description="Tsinghua network tools",
     long_description=long_description,
