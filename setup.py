@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="tsinghua-net-dongbaishun",
+    name="tsinghua_net_dongbaishun",
     version="1.0.0",
     description="Tsinghua network tools",
     long_description=long_description,
@@ -27,7 +27,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'tsinghua_net=net:main'
+            'tsinghua_net=tsinghua_net_dongbaishun.tsinghua_net:main'
         ]
     }
 )
