@@ -70,7 +70,7 @@ def status():
     try:
         resp = requests.post(status_url, headers=headers)
         if len(resp.text) == 0:
-            print('not login')
+            print('user not login.\n')
             return
         resp_fields = resp.text.split(',')
         online_time = int(resp_fields[2]) - int(resp_fields[1])
