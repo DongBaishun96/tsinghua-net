@@ -2,10 +2,10 @@
 
 login_url = 'http://net.tsinghua.edu.cn/do_login.php'
 status_url = 'http://net.tsinghua.edu.cn/rad_user_info.php'
-connection_ping_url = 'net.tsinghua.edu.cn'
+connection_ping_url = 'tsinghua_net.tsinghua.edu.cn'
 
 headers = {
-    'Host': 'net.tsinghua.edu.cn',
+    'Host': 'tsinghua_net.tsinghua.edu.cn',
     'Connection': 'keep-alive',
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) \
                        Chrome/87.0.4280.141 Safari/537.36',
