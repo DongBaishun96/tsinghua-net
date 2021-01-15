@@ -27,7 +27,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'tsinghua_net=tsinghua_net.__main__:main'
+            'tsinghua_net=tsinghua_net:main'
         ]
     }
 )
