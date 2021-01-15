@@ -69,6 +69,9 @@ def logout():
 def status():
     try:
         resp = requests.post(status_url, headers=headers)
+        if resp.status_code == 500:
+            print('connect network failed, check system proxy.\n')
+            return
         if len(resp.text) == 0:
             print('user not login.\n')
             return
