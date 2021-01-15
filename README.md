@@ -36,3 +36,8 @@ tsinghua_net schedule -u xxx -p xxxxx
 ## 无线连接
 tsinghua_net schedule -u xxx -p -w wireless
 ```
+
+## 卸载脚本
+```shell script
+pip uninstall tsinghua_net
+```
