@@ -11,7 +11,7 @@ setup(
     license="Apache 2.0 Licence",
 
     url="https://github.com/DongBaishun96/tsinghua-net",
-    author="DongBaishun96",
+    author="dongbaishun",
     author_email="dbs18@mails.tsinghua.edu.cn",
 
     packages=find_packages(),
@@ -27,7 +27,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'tsinghua_net=tsinghua_net.net:main'
+            'tsinghua_net=net:main'
         ]
     }
 )
