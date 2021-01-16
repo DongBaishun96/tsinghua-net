@@ -30,12 +30,12 @@ connection_type = 0  # 0代表有线连接，1代表无线连接
 # 登录
 def login(username, password):
     if connection_type == 1:
-        is_network_connection()
-        if connect_wlan():
-            time.sleep(5)
-        else:
-            print('connect WLAN failed.\n')
-            return
+        if not is_network_connection():
+            if connect_wlan():
+                time.sleep(5)
+            else:
+                print('connect WLAN failed.\n')
+                return
     try:
         password = '{MD5_HEX}' + hashlib.md5(password.encode('utf-8')).hexdigest()
         data = {
@@ -96,7 +96,7 @@ def schedule_job(username, password):
 
 def main():
     global connection_type
-    parser = argparse.ArgumentParser(description='Tsinghua network tools')
+    parser = argparse.ArgumentParser(description='Tsinghua network script')
     parser.add_argument('action', help='login / logout / status / schedule')
     parser.add_argument('--username', '-u')
     parser.add_argument('--password', '-p')
