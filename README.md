@@ -1,4 +1,6 @@
 # Tsinghua-net
+本项目针对清华校园网。
+脚本挂起来，科研不断网！
 让你的远程主机不再断网！
 
 ## 安装步骤
@@ -11,7 +13,6 @@ pip install git+https://github.com/DongBaishun96/tsinghua-net.git
 ```
 
 ## 使用说明
-
 ### 登录
 ```shell script
 ## 有线连接
@@ -42,3 +43,9 @@ tsinghua_net schedule -u xxx -p -w wireless
 ```shell script
 pip uninstall tsinghua_net
 ```
+
+## 感谢
+
+- 各位开源的同学们
+- @DongBaishun
+- @YjGit
