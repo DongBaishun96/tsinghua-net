@@ -38,6 +38,11 @@ tsinghua_net schedule -u xxx -p xxxxx
 ## 无线连接
 tsinghua_net schedule -u xxx -p -w wireless
 ```
+### 加入开机启动
+```shell
+/bin/sh ./autostart.sh
+```
+
 
 ## 卸载脚本
 ```shell script
